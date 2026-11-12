@@ -1,0 +1,12 @@
+{
+  "showHud": true,
+  "showCameraPanel": true,
+  "layoutPreset": "40_60",
+  "meshScale": 0.8000000000000002,
+  "meshLineWidth": 1,
+  "cameraMeshLineWidth": 4,
+  "fpsLimit": 0,
+  "qualityMode": "high",
+  "meshStyle": "wire",
+  "hudScale": 1.0
+}
