@@ -1,25 +1,25 @@
-# Створення емоційного аватару з динамічними виразами обличчя під час взаємодії людини з комп’ютером
+# Creating an Emotional Avatar with Dynamic Facial Expressions During Human-Computer Interaction
 
-## Опис проєкту
+## Project Description
 
-Даний програмний продукт призначений для аналізу мімічних рухів користувача за допомогою вебкамери та їх відображення на інтерактивному тривимірному аватарі в режимі реального часу.
+This software application is designed to analyze the user's facial movements using a webcam and reproduce them on an interactive three-dimensional avatar in real time.
 
-Система використовує методи комп'ютерного зору для визначення ключових точок обличчя, аналізу мімічних параметрів та положення голови користувача. Отримані дані передаються до модуля рендерингу, який оновлює тривимірну модель відповідно до змін міміки.
+The system uses computer vision techniques to detect facial landmarks, analyze facial expression parameters, and track the user's head position. The collected data is transmitted to the rendering module, which updates the 3D model according to changes in the user's facial expressions.
 
-### Основні можливості системи
+### Main System Features
 
-- Відстеження обличчя у режимі реального часу
-- Визначення ключових точок обличчя
-- Аналіз мімічних рухів
-- Визначення базових емоційних станів
-- Відображення інтерактивного 3D-аватара
-- Режим відображення mesh-моделі обличчя
-- Режим відображення ключових точок поверх відеопотоку
-- Робота зі звичайною вебкамерою без додаткового обладнання
+- Real-time face tracking
+- Facial landmark detection
+- Facial movement analysis
+- Basic emotional state recognition
+- Interactive 3D avatar rendering
+- Facial mesh visualization mode
+- Facial landmark visualization over the video stream
+- Compatibility with standard webcams without additional hardware
 
 ---
 
-## Використані технології
+## Technologies Used
 
 - Python 3.11+
 - OpenCV
@@ -29,66 +29,66 @@
 
 ---
 
-## Системні вимоги
+## System Requirements
 
-### Мінімальні вимоги
+### Minimum Requirements
 
-| Компонент | Вимоги |
+| Component | Requirements |
 |-----------|---------|
-| Процесор | Intel Core i3 або аналогічний |
-| Оперативна пам'ять | 4 ГБ |
-| Камера | Вебкамера 720p |
-| Python | Версія 3.11 або новіша |
+| Processor | Intel Core i3 or equivalent |
+| RAM | 4 GB |
+| Camera | 720p webcam |
+| Python | Version 3.11 or later |
 
-### Рекомендовані вимоги
+### Recommended Requirements
 
-| Компонент | Вимоги |
+| Component | Requirements |
 |-----------|---------|
-| Процесор | Intel Core i5 / Ryzen 5 або новіше |
-| Оперативна пам'ять | 8 ГБ і більше |
-| Камера | Full HD вебкамера |
-| Освітлення | Стабільне та рівномірне |
+| Processor | Intel Core i5 / Ryzen 5 or newer |
+| RAM | 8 GB or more |
+| Camera | Full HD webcam |
+| Lighting | Stable and evenly distributed |
 
 ---
 
-## Рекомендації щодо запуску
+## Installation and Launch Recommendations
 
-> **Увага!**
+> **Important!**
 >
-> Для уникнення конфліктів із бібліотеками та програмним забезпеченням, які вже встановлені на комп'ютері користувача, рекомендується запускати проєкт у окремому віртуальному середовищі Python.
+> To avoid conflicts with libraries and software already installed on the user's computer, it is recommended to run the project in a separate Python virtual environment.
 
-Використання віртуального середовища дозволяє:
+Using a virtual environment allows you to:
 
-- Ізолювати залежності проєкту
-- Уникнути конфліктів версій бібліотек
-- Спростити встановлення та оновлення компонентів
-- Не впливати на інші Python-проєкти, встановлені на комп'ютері
+- Isolate project dependencies
+- Avoid library version conflicts
+- Simplify component installation and updates
+- Prevent interference with other Python projects installed on the computer
 
 ---
 
-## Створення віртуального середовища
+## Creating a Virtual Environment
 
 ### Windows
 
-Перейдіть до директорії проєкту:
+Navigate to the project directory:
 
 ```bash
 cd project_directory
 ```
 
-Створіть віртуальне середовище:
+Create a virtual environment:
 
 ```bash
 python -m venv venv
 ```
 
-Активуйте його:
+Activate it:
 
 ```bash
 venv\Scripts\activate
 ```
 
-Після успішної активації в командному рядку з'явиться префікс:
+Once successfully activated, the following prefix will appear in the command prompt:
 
 ```text
 (venv)
@@ -96,13 +96,13 @@ venv\Scripts\activate
 
 ### Linux
 
-Створення середовища:
+Create the environment:
 
 ```bash
 python3 -m venv venv
 ```
 
-Активація:
+Activate it:
 
 ```bash
 source venv/bin/activate
@@ -110,13 +110,13 @@ source venv/bin/activate
 
 ### macOS
 
-Створення середовища:
+Create the environment:
 
 ```bash
 python3 -m venv venv
 ```
 
-Активація:
+Activate it:
 
 ```bash
 source venv/bin/activate
@@ -124,78 +124,78 @@ source venv/bin/activate
 
 ---
 
-## Встановлення залежностей
+## Installing Dependencies
 
-Після активації віртуального середовища виконайте:
+After activating the virtual environment, run:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Усі необхідні бібліотеки будуть встановлені автоматично.
+All required libraries will be installed automatically.
 
 ---
 
-## Запуск програми
+## Running the Application
 
-Після встановлення залежностей виконайте:
+After installing the dependencies, run:
 
 ```bash
 python main.py
 ```
 
-або
+or
 
 ```bash
 python3 main.py
 ```
 
-залежно від конфігурації операційної системи.
+depending on your operating system configuration.
 
 ---
 
-## Режими роботи
+## Operating Modes
 
-### Режим 3D-аватара
+### 3D Avatar Mode
 
-Основний режим роботи системи.
+The primary operating mode of the system.
 
-Функціональні можливості:
+Features:
 
-- Аналіз міміки користувача
-- Визначення положення голови
-- Оновлення геометрії тривимірного аватара
-- Відображення анімації у режимі реального часу
-
----
-
-### Режим Mesh
-
-Призначений для демонстрації полігональної структури обличчя.
-
-Відображаються:
-
-- Вершини моделі
-- Ребра між вершинами
-- Структура тривимірної сітки
+- User facial expression analysis
+- Head position tracking
+- 3D avatar geometry updates
+- Real-time animation rendering
 
 ---
 
-### Режим ключових точок
+### Mesh Mode
 
-Використовується для аналізу роботи алгоритмів комп’ютерного зору.
+Designed to demonstrate the polygonal structure of the face.
 
-Відображаються:
+The following elements are displayed:
 
-- Відеопотік із камери
-- Усі знайдені ключові точки обличчя
-- Результати роботи Face Landmarker
+- Model vertices
+- Edges connecting the vertices
+- 3D mesh structure
 
 ---
 
-## Завершення роботи
+### Facial Landmark Mode
 
-Для завершення роботи програми необхідно закрити головне вікно програми. Після завершення роботи рекомендується деактивувати віртуальне середовище:
+Used to analyze the performance of computer vision algorithms.
+
+The following elements are displayed:
+
+- Live camera feed
+- All detected facial landmarks
+- Face Landmarker processing results
+
+---
+
+## Shutting Down the Application
+
+To exit the application, simply close the main program window. After shutting down the application, it is recommended to deactivate the virtual environment:
 
 ```bash
 deactivate
@@ -203,38 +203,38 @@ deactivate
 
 ---
 
-## Можливі проблеми
+## Troubleshooting
 
-### Камера не визначається
+### Camera Not Detected
 
-Перевірте:
+Check the following:
 
-- Чи підключена вебкамера
-- Чи не використовується вона іншою програмою
-- Чи надано дозвіл на використання камери
+- Whether the webcam is properly connected
+- Whether it is being used by another application
+- Whether permission to access the camera has been granted
 
-### Помилки імпорту бібліотек
+### Library Import Errors
 
-Переконайтеся, що команда
+Make sure the following command:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-виконалась успішно.
+has completed successfully.
 
-### Низька швидкодія
+### Poor Performance
 
-Рекомендується:
+The following actions are recommended:
 
-- Закрити сторонні програми
-- Забезпечити якісне освітлення
-- Зменшити навантаження на процесор
+- Close unnecessary background applications
+- Ensure adequate lighting conditions
+- Reduce CPU usage by closing resource-intensive applications
 
 ---
 
-## Автор
+## Author
 
-Дипломна робота бакалавра Дудяк Дарії Олександрівни на тему:
+Bachelor's thesis by Dariia Oleksandrivna Dudiak, titled:
 
-**«Створення емоційного аватару з динамічними виразами обличчя під час взаємодії людини з комп’ютером»**
+**"Creating an Emotional Avatar with Dynamic Facial Expressions During Human-Computer Interaction"**
